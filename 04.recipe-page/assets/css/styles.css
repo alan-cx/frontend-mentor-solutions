@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Outfit;
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young serif';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+  font-style: normal;
+}
+
+:root {
+  --heading-font: 'Young serif', system-ui, -apple-system, sans-serif;
+  --normal-font: Outfit, system-ui, -apple-system, sans-serif;
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --w1: 400; 
+  --w2: 600;
+  --w3: 700;
+  --p1: 1.8rem;
+  --p2: 1rem;
+  --p3: .8rem;
+  --p4: .5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--normal-font);
+  background-color: var(--stone-100);
+  padding: var(--p1);
+}
+
+.main {
+  background-color: var(--white);
+  max-width: 600px;
+  padding: var(--p1);
+  border-radius: var(--p2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--p2);
+}
+
+.main-img img {
+  max-width: 100%;
+  border-radius: var(--p1);
+  object-fit: cover;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: var(--p1);
+  font-weight: var(--w2);
+  margin-bottom: var(--p4);
+}
+
+h2 {
+  color: var(--brown-800);
+}
+
+h3 {
+  color: var(--rose-800);
+}
+
+p {
+  font-weight: var(--w1);
+}
+
+hr {
+  background-color: #d3d3d3;
+  height: 1px;
+  border: none;
+}
+
+.general-info p {
+  color: var(--stone-600);
+  margin-bottom: var(--p1);
+}
+
+.general-item {
+  background-color: var(--rose-50);
+  padding: var(--p1);
+  border-radius: var(--p3);
+}
+
+.general-item h3 {
+  margin-bottom: var(--p4);
+  font-weight: var(--w2);
+}
+
+.general-item ::marker {
+  color: var(--rose-800);
+}
+
+.general-item ul {
+  padding-left: var(--p2);
+}
+
+.general-item li {
+  margin-bottom: var(--p4);
+  padding-left: var(--p2);
+}
+
+li span {
+  color: var(--stone-600);
+  font-weight: var(--w3);
+}
+
+.ingredients-section ul {
+  padding: var(--p2);
+}
+
+.ingredients-section li {
+  padding: 0 0 var(--p4);
+  color: var(--stone-600);
+}
+
+.ingredients-section ::marker {
+  color: var(--brown-800);
+}
+
+.nutrition-section p {
+  color: var(--stone-600);
+  margin-top: var(--p4);
+}
+
+.instructions-section ol {
+  padding: var(--p2);
+}
+
+.instructions-section li {
+  padding: var(--p4);
+  color: var(--stone-600);
+}
+
+.nutrition-table {
+  margin-top: var(--p3);
+}
+
+.nutrition-table th {
+  padding: var(--p4);
+  text-align: start;
+  margin-left: 8rem;
+  display: block;
+}
+
+.nutrition-table td {
+  padding: 0 var(--p2);
+  background-color: var(--rose-50);
+}
+
+.nutrition-table td {
+  color: var(--stone-600);
+}
+
+.nutrition-table th {
+  color: var(--brown-800);
+}
+
+@media (max-width: 40rem) {
+  body {
+    padding: 0;
+  }
+
+  .main {
+    border-radius: 0;
+    padding: 0 0 var(--p1);
+  }
+
+  .main-img img {
+    border-radius: 0;
+  }
+
+  section {
+    padding: 0 var(--p1);
+  }
+}
