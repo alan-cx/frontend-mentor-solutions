@@ -1,0 +1,138 @@
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Fraunces", serif;
+  --green-500: #3c8067;
+  --green-700: #1b4133;
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2ebe3;
+  --white: #fff;
+  --p1: 16px;
+  --p2: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--p1);
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: var(--p2);
+  display: flex;
+  overflow: hidden;
+  width: 700px;
+  height: 480px;
+}
+
+.card-img, 
+.card-text {
+  flex: 50%;
+  height: 100%;
+}
+
+.card-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-text {
+  padding: var(--p2);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+.first-p {
+  color: var(--grey);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.second-p {
+  color: var(--grey);
+  font-size: var(--p2);
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inner p {
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  color: var(--green-500);
+}
+
+.inner span {
+  color: var(--grey);
+  text-decoration: 1px line-through var(--grey);
+}
+
+button {
+  background-color: var(--green-500);
+  color: var(--white);
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: var(--p2);
+  padding: 24px;
+  cursor: pointer;
+  transition: all ease .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--p1);
+  font-weight: 700;
+  font-size: var(--p1);
+}
+
+button:hover {
+  background-color: var(--green-700);
+}
+
+
+@media (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    overflow: none;
+    height: max-content;
+    width: 600px;
+  }
+
+  .card-text {
+    gap: 1rem;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
