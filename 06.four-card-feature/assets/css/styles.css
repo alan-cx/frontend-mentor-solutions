@@ -1,0 +1,111 @@
+:root {
+  --font: "Poppins", sans-serif;
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+  --grey-500: #4c4e61;
+  --grey-400: #697077;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: var(--font);
+  background-color: var(--white);
+  gap: 3.5rem;
+}
+
+.header {
+  text-align: center;
+}
+
+header p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 200;
+  color: var(--grey-500);
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--grey-500);
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+p {
+  color: var(--grey-400);
+  font-size: 15px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 2px 8px 10px rgb(212, 212, 212);
+  padding: 2rem;
+  max-width: 400px;
+  height: 280px;
+  border-radius: 10px;
+  padding: 1;
+  border-top: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  align-self: end;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.supervisor {
+  border-color: var(--cyan);
+}
+
+.team {
+  border-color: var(--red);
+}
+
+.karma {
+  border-color: var(--orange);
+}
+
+.calculator {
+  border-color: var(--blue);
+}
+
+@media (max-width: 920px) {
+  header p {
+    max-width: 100%;
+  }
+}
