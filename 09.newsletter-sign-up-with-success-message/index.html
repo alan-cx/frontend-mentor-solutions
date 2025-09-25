@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login">
+      <div class="login-content">
+        <div>
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form>
+          <label for="email">Email address <span>Valid email required</span></label>
+          <input type="text" placeholder="email@company.com" id="email">
+          <button type="submit" class="submit-btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+
+      <div class="login-image">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+          <source media="(max-width: 1024px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Desktop image">
+        </picture>
+      </div>
+    </div>    
+  </div>
+
+  <div class="success-popup" aria-hidden="true">
+    <img src="./assets/images/icon-success.svg" alt="Success image">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span class="show-user-email">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button class="close-popup">Dismiss message</button>
+   </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
