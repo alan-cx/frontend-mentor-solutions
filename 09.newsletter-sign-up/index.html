@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main class="main">
+    <div class="wrapper" aria-hidden="false">
+      <section class="login-section">
+        <div class="content">
+          <div>
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+          <ol>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ol>
+          <form novalidate>
+            <label for="email">Email address <span>Valid email required</span></label>
+            <input type="text" placeholder="email@company.com" id="email">
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+
+        <div class="image">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+            <source media="(max-width: 937px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Desktop image">
+          </picture>
+        </div>
+      </section>
+    </div>
+
+    <div class="success-message" aria-hidden="true">
+      <img src="./assets/images/icon-success.svg" alt="Success icon">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span class="user-email">example@gmail.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="close-btn">Dismiss message</button>
+    </div>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
