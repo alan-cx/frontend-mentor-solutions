@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>spli<br/>tter</h1>
+  </header>
+  <main class="main">
+    <section class="inputs">
+      <div>
+        <label for="bill">Bill</label>
+        <div class="input-wrapper">
+          <img src="./assets/images/icon-dollar.svg" alt="Icon dollar">
+          <input type="number" name="bill" id="bill" placeholder="0">
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <p>Select Tip %</p>
+        </div>
+        <div class="buttons-wrapper">
+          <button value="5" class="tip-value-btn">5%</button>
+          <button value="10" class="tip-value-btn">10%</button>
+          <button value="15" class="tip-value-btn">15%</button>
+          <button value="25" class="tip-value-btn">25%</button>
+          <button value="50" class="tip-value-btn">50%</button>
+          <input type="number" placeholder="Custom" class="tip-value-input">
+        </div>
+      </div>
+
+      <div>
+        <label for="people">Number of People</label>
+        <div class="input-wrapper">
+          <img src="./assets/images/icon-person.svg" alt="Icon person">
+          <input type="number" name="people" id="people" placeholder="0">
+        </div>
+      </div>
+    </section>
+
+    <section class="outputs">
+      <div>
+        <div class="output-wrapper">
+          <p><span>Tip Amount</span> <br/> / person</p>
+          <span class="tip-amount-result">$0.00</span>
+        </div>
+        <div class="output-wrapper">
+          <p><span>Total</span> <br> / person</p>
+          <span class="tip-person-result total-amount">$0.00</span>
+        </div>
+      </div>
+      <div>
+        <button class="reset-btn" disabled="true">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
