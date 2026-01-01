@@ -1,6 +1,6 @@
 export const Result = () => {
   return (
-    <section className="flex flex-col gap-4 items-center text-center md:p-18 p-10 bg-violetBlue text-white">
+    <section className="flex flex-col gap-4 items-center text-center md:p-16 p-8 bg-violetBlue text-white">
       <p className="font-extrabold text-2xl text-LightLavender">Your result is</p>
 
       <div className="h-40 w-40 bg-slateBlue rounded-full flex flex-col justify-center items-center">

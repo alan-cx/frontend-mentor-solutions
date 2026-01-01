@@ -12,7 +12,7 @@ export const Summary = () => {
   const [jsonData] = useState<Data[]>(data)
 
   return (
-    <section className="flex flex-col gap-4 items-start justify-between text-center md:py-18 md:px-10 p-10">
+    <section className="flex flex-col gap-4 items-start justify-between text-center md:py-16 md:px-8 p-8">
       <h2 className="font-extrabold text-2xl text-darkGrayBlue">Summary</h2>
 
       <div className="w-full space-y-4">
